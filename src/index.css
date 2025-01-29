@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-align: left;
+}
+
+.font-mont {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+.font-pal {
+  font-family: "Palanquin", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pal-light {
+  font-family: "Palanquin", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.pal-semibold {
+  font-family: "Palanquin", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.pal-bold {
+  font-family: "Palanquin", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* .bg-hero {
+  background-image: url('assets/images/collection-background.svg');
+}
+
+.bg-card {
+  background-image: url('assets/images/thumbnail-background.svg');
+} */
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-500 pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-400 max-sm:rounded-full;
+  }
+}
+
+
+@layer utilities {
+
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+ /* Custom Colors */
+  :root {
+    --color-primary: #ECEEFF;
+    --color-coral-red: #FF6452;
+    --color-slate-gray: #6D6D6D;
+    --color-pale-blue: #F5F6FF;
+    --color-white-400: rgba(255, 255, 255, 0.80);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-coral-red {
+    background-color: var(--color-coral-red);
+  }
+  .bg-slate-gray {
+    background-color: var(--color-slate-gray);
+  }
+  .bg-pale-blue {
+    background-color: var(--color-pale-blue);
+  }
+  .bg-white-400 {
+    background-color: var(--color-white-400);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-coral-red {
+    color: var(--color-coral-red);
+  }
+  .text-slate-gray {
+    color: var(--color-slate-gray);
+  }
+  .text-pale-blue {
+    color: var(--color-pale-blue);
+  }
+  .text-white-400 {
+    color: var(--color-white-400);
+  }
+
+  /* Custom Box Shadows */
+  .shadow-3xl {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Custom Background Images */
+  .bg-hero {
+    background-image: url('assets/images/collection-background.svg');
+  }
+  .bg-card {
+    background-image: url('assets/images/thumbnail-background.svg');
+  }
+
+  /* Custom Screen Sizes */
+  @media (min-width: 1440px) {
+    .wide\:text-lg {
+      font-size: var(--font-size-lg);
+    }
+  }
+  }
+
+    Typography Utility 
+    .info-text {
+      @apply font-sans text-slate-500 text-lg leading-7;
+    }
+  

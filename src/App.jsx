@@ -23,7 +23,7 @@ const infoText = "font-sans text-slate-500 text-lg leading-7";
       <section className='xl:padding-l wide:padding-r padding-b'>
         <Hero />
       </section>
-      <section className='padding'>
+      <section className='py-10'>
         <PopularProducts />
       </section>
       <section className='padding'>

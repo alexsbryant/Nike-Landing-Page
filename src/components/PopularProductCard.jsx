@@ -1,9 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { star } from '../assets/icons';
 
-const PopularProductCard = () => {
+const PopularProductCard = ({ imgURL, name, price }) => {
   return (
-    <div>TEST</div>
+    <div className='flex flex-1 flex-col w-full max-sm:w-full'>
+      <img 
+        src={imgURL}
+        alt={name}
+        className='w-[280px] h-[280px]'
+      />
+      <div className='mt-8 flex justify-start gap-2.5'>
+        <img 
+          src={star} 
+          alt="rating" 
+          width={24} 
+          height={24} 
+        />
+        <p className='font-mont text-xl leading-normal text-slate-gray'>(4.5)</p>
+      </div>
+      <h3 className='mt-2 text-2xl leading-normal pal-semibold'>{name}</h3>
+      <p className='mt-2 font-mont text-lg leading-normal text-slate-gray'>{price}</p>
+    </div>
   )
 }
 
-export default PopularProductCard
+export default PopularProductCard;

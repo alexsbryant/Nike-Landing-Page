@@ -3,7 +3,7 @@ import Button from '../components/Button'
 import { arrowRight } from '../assets/icons'
 import { shoes, statistics } from '../constants'
 import { bigShoe1 } from '../assets/images'
-import ShoeCard from '../constants/ShoeCard'
+import ShoeCard from '../components/ShoeCard'
 
 const Hero = () => {
 
@@ -19,7 +19,6 @@ const Hero = () => {
           <span className='text-red-400 inline-block mt-3 xl:mt-5'>Nike</span> Shoes
         </h1>
         <p className='font-mont text-gray-400 text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>Discovery stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
-        
         <Button 
           label="Shop now"
           iconURL={arrowRight}

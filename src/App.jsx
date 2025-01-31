@@ -29,7 +29,7 @@ const infoText = "font-sans text-slate-500 text-lg leading-7";
       <section className='py-10'>
         <SuperQuality />
       </section>
-      <section className='padding-x py-10'>
+      <section className='py-10'>
         <Services />
       </section>
       <section className='padding'>

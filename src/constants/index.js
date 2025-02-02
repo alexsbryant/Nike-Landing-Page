@@ -65,7 +65,7 @@ export const services = [
     },
     {
         imgURL: support,
-        label: "Love to help you",
+        label: "World class support",
         subtext: "Our dedicated team is here to assist you every step of the way."
     },
 ];

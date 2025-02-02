@@ -32,7 +32,7 @@ const infoText = "font-sans text-slate-500 text-lg leading-7";
       <section className='py-10'>
         <Services />
       </section>
-      <section className='padding'>
+      <section className='sm:px-16 px-8 sm:py-24 py-10'>
         <SpecialOffer />
       </section>
       <section className='padding bg-blue-100'>

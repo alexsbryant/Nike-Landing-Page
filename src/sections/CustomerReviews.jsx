@@ -11,7 +11,7 @@ const CustomerReviews = () => {
            Are Saying...
         </h3>
     <p className='m-auto mt-4 max-w-lg text-center info-text w-fit mx-auto'>Hear genuine stories from our satisfied customers.</p>
-    <div className='mt-20 flex flex-wrap justify-center items-center max-lg:flex-col gap-14'>
+    <div className='mt-20 flex flex-wrap justify-center items-center max-md:flex-col gap-14'>
       {reviews.map((review) => (
         <ReviewCard 
           key={review.customerName}

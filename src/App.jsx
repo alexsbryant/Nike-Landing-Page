@@ -35,7 +35,7 @@ const infoText = "font-sans text-slate-500 text-lg leading-7";
       <section className='sm:px-16 px-8 sm:py-24 py-10'>
         <SpecialOffer />
       </section>
-      <section className='flex justify-center text-center sm:px-16 px-8 sm:py-24 py-12 bg-blue-100 opacity-90'>
+      <section className='sm:px-16 px-8 sm:py-24 py-12 bg-blue-100 opacity-90'>
         <CustomerReviews />
       </section>
       <section className='padding-x sm:py-32 py-16 w-full'>

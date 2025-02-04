@@ -41,7 +41,7 @@ const infoText = "font-sans text-slate-500 text-lg leading-7";
       <section className='padding-x sm:py-32 py-16 w-full'>
         <Subscribe />
       </section>
-      <section className='bg-black padding-x patting-t pb-8'>
+      <section className='bg-black sm:px-16 px-8 sm:pt-24 pt-12 pb-8'>
         <Footer />
       </section>
     </main>
